@@ -1,0 +1,19 @@
+{
+  "name": "reporter-html",
+  "version": "1.0.0",
+  "main": "reporter_html.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canonical-path": "0.0.2",
+    "lodash": "^4.16.2"
+  },
+  "engines": {
+    "node": ">=4.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {},
+  "description": ""
+} 
