@@ -82,7 +82,7 @@ var Reporter_html = function(options) {
                     html = html + '<tr class="spec passed">';
                 }else {
                     html = html + '<tr class="spec failed">';
-                }
+                }   
                 html = html + '<td>' + spec.description +'</td>';
                 html = html + '<td>' + spec.status + '</td>';
                 html = html + '<td><a href="' + 'screenshots/' + spec.screenshot + '" class="screenshot">';
@@ -121,7 +121,7 @@ var Reporter_html = function(options) {
 
     function initOutputFile(outputFile) {
         ensureDirectoryExistence(outputFile);
-        var header = '<!DOCTYPE html><html><head lang=en><meta charset=UTF-8><title></title><style>table, table>tbody>tr>td {border: 5px solid #ddd; padding: 5px;} tr.suite.passed{background-color: #67b167;} tr.suite.failed{background-color: #f77878;} tr.spec.passed{color: green;} tr.spec.failed{color: red;} img{border: 5px solid #ddd; width:250px; height: 250px;}</style></head>';
+        var header = '<!DOCTYPE html><html><head lang=en><meta charset=UTF-8><title></title><style>body {font-family:Arial} table, table>tbody>tr>td {border: 5px solid #ddd; padding: 5px;} tr.suite.passed{background-color: #67b167;} tr.suite.failed{background-color: #f77878;} tr.spec.passed{color: green;} tr.spec.failed{color: red;} img{border: 5px solid #ddd; width:250px; height: 250px;}</style></head>';
         fs.writeFileSync(outputFile, header);
    }
     // for console output
